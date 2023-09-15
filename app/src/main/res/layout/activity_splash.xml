@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@mipmap/fd"
+        android:layout_centerInParent="true"
+        android:id="@+id/img_icon"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_icon"
+        android:layout_marginHorizontal="@dimen/_81sdp"
+        android:fontFamily="@font/courgette"
+        android:text="@string/food_donation_app"
+        android:textSize="@dimen/_16sdp"
+        android:id="@+id/app_name"/>
+
+</RelativeLayout>

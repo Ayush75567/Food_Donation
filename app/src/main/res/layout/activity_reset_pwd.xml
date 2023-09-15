@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResetPassword">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:orientation="vertical"
+        android:id="@+id/forgot_linear"
+        android:background="@drawable/custom_background">
+
+        <TextView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:textSize="@dimen/_30sdp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_40sdp"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_below="@+id/forgot_linear"
+        android:id="@+id/forgot_email"
+        android:hint="@string/enter_email_id"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:textColorHint="@color/black"
+        android:background="@drawable/custom_border"
+        android:paddingLeft="@dimen/_10sdp"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot_email"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_80sdp"
+        android:text="@string/reset_password"
+        android:id="@+id/reset_button"
+        android:layout_marginBottom="@dimen/_10sdp"/>
+
+</RelativeLayout>
